@@ -31,14 +31,14 @@ h1 {
   font-weight: 100;
   text-align: center;
   color: white;
-  font-family: "N27", "Space Grotesk";
+  font-family: "N27", "Space Grotesk", sans-serif;
 }
 
 h2 {
   font-weight: 100;
   text-align: center;
   color: white;
-  font-family: "Lao MN", "Limelight";
+  font-family: "Lao MN", "Limelight", sans-serif;
 }
 
 span {
