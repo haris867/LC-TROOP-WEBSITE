@@ -80,6 +80,10 @@ p {
 
 /* CONTACT SECTION */
 
+.contact {
+  margin-top: 100px;
+}
+
 .button {
   border: solid 3px #ffd700;
   background-color: white;
