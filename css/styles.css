@@ -10,8 +10,20 @@
   src: url("/fonts/lao-mn.ttf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #131313;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -59,6 +71,92 @@ span {
   margin: 100px auto;
 }
 
+p {
+  font-family: "Lao MN";
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/* CONTACT SECTION */
+
+.button {
+  border: solid 3px #ffd700;
+  background-color: white;
+  padding: 10px 70px;
+  font-family: "N27";
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
+.button:hover {
+  background-color: #131313;
+  color: white;
+}
+
+.contact-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.slide {
+  height: 100vh;
+}
+
+.second-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CONTACT SECTION END */
+
+.icons a {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.instagram-icon {
+  font-size: 3em;
+  margin: 0 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.map-icon {
+  font-size: 3em;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.fa-instagram {
+  transition: ease-in 0.3s;
+}
+
+.fa-map-marker {
+  transition: ease-in 0.3s;
+}
+
+.fa-instagram:hover {
+  color: #ffd700;
+}
+.fa-map-marker:hover {
+  color: #ffd700;
+}
+
+.copyright {
+  font-size: 1em;
+  bottom: 10px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -96,6 +194,14 @@ span {
   .arrow {
     max-width: 80px;
     margin-top: 60px;
+  }
+  .contact p {
+    font-size: 1.6em;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
   }
 }
 

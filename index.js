@@ -94,3 +94,11 @@ anime({
 // }
 
 // logo.addEventListener("click", runAnimation);
+
+// SCROLL
+
+arrow.addEventListener("click", scrollToBottom);
+
+function scrollToBottom() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
