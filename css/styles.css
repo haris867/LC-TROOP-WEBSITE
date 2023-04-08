@@ -65,7 +65,6 @@ span {
   max-width: 50px;
   animation: bounce 1.5s infinite;
   transform: scale(0.1);
-  cursor: pointer;
   display: flex;
   justify-content: center;
   margin: 100px auto;
@@ -81,16 +80,18 @@ p {
 /* CONTACT SECTION */
 
 .contact {
-  margin-top: 200px;
+  margin-bottom: -200px;
 }
 
 .button {
   border: solid 3px #ffd700;
   background-color: white;
+  color: #131313;
   padding: 10px 70px;
   font-family: "N27";
   cursor: pointer;
   transition: ease-in 0.3s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -110,12 +111,25 @@ p {
 
 .second-slide {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 
 /* CONTACT SECTION END */
+
+.footer-and-icons {
+  margin-top: 200px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.name h2 {
+  font-family: "N27";
+}
 
 .icons a {
   color: #ffffff;
@@ -154,11 +168,29 @@ p {
 
 .copyright {
   font-size: 1em;
-  bottom: 10px;
+  margin-bottom: -10px;
 }
 
 footer {
-  margin-top: 40px;
+  margin-top: 50px;
+}
+
+/* SCROLL SNAP */
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.scroll-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+  scroll-snap-align: start;
+  height: 100vh;
 }
 
 @keyframes bounce {
@@ -195,6 +227,10 @@ footer {
   h2 {
     font-size: 2em;
   }
+
+  .name h2 {
+    font-size: 1.5em;
+  }
   .arrow {
     max-width: 80px;
     margin-top: 60px;
@@ -202,15 +238,14 @@ footer {
   .contact p {
     font-size: 1.6em;
   }
-
-  .icons {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 @media (min-width: 1292px) {
   .arrow {
     max-width: 100px;
+  }
+
+  .contact h2 {
+    font-size: 2.5em;
   }
 }

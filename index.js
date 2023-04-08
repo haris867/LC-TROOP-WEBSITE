@@ -95,10 +95,24 @@ anime({
 
 // logo.addEventListener("click", runAnimation);
 
-// SCROLL
+// SCROLL ONCLICK ARROW
 
 arrow.addEventListener("click", scrollToBottom);
 
 function scrollToBottom() {
-  window.scrollTo(0, document.body.scrollHeight);
+  console.log("scrolling");
+  window.scrollTo(
+    0,
+    document.documentElement.scrollHeight || document.body.scrollHeight
+  );
 }
+
+// SCROLL page
+
+// window.addEventListener("scroll", scrollPage);
+
+// function scrollPage() {
+//   const scrollPosition = window.scrollY;
+
+//   console.log(scrollPosition);
+// }
