@@ -2,10 +2,12 @@ const comingSoon = document.querySelector("#coming-soon");
 const stayTuned = document.querySelector("#stay-tuned");
 const arrow = document.querySelector(".arrow");
 const logo = document.querySelector("#logo-svg path");
+const contactSection = document.querySelector(".contact-section");
 
 comingSoon.style.opacity = "0";
 stayTuned.style.opacity = "0";
 arrow.style.opacity = "0";
+contactSection.style.opacity = "0";
 
 anime({
   targets: logo,
@@ -39,6 +41,14 @@ anime({
         });
         anime({
           targets: arrow,
+          opacity: [0, 1],
+          translateY: [20, 0],
+          duration: 500,
+          delay: 2400,
+          easing: "easeInOutQuad",
+        });
+        anime({
+          targets: contactSection,
           opacity: [0, 1],
           translateY: [20, 0],
           duration: 500,
@@ -97,22 +107,9 @@ anime({
 
 // SCROLL ONCLICK ARROW
 
-arrow.addEventListener("click", scrollToBottom);
+// arrow.addEventListener("onscroll", scrollToBottom);
 
-function scrollToBottom() {
-  console.log("scrolling");
-  window.scrollTo(
-    0,
-    document.documentElement.scrollHeight || document.body.scrollHeight
-  );
-}
-
-// SCROLL page
-
-// window.addEventListener("scroll", scrollPage);
-
-// function scrollPage() {
-//   const scrollPosition = window.scrollY;
-
-//   console.log(scrollPosition);
+// function scrollToBottom() {
+//   console.log(document.documentElement.scrollHeight);
+//   window.onscroll(0, document.documentElement.lastElementChild);
 // }

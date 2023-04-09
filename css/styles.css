@@ -116,6 +116,10 @@ p {
   flex-direction: column;
 }
 
+.contact-span {
+  font-size: 1.5em;
+}
+
 /* CONTACT SECTION END */
 
 .footer-and-icons {
